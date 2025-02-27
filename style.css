@@ -291,20 +291,22 @@ i:hover{
     background: #ecd58a;
     transition: all 0.4s;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
     font-size: 30px;
     font-weight: 900;
-  }
-  
-  .card:hover {
+    overflow: hidden;
+    position: relative;
+}
+
+.card:hover {
     border-radius: 15px;
     cursor: pointer;
     transform: scale(1.1);
-    box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
     background: rgba(236, 236, 236, 0.966);
-  }
+}
   
-  .first-content {
+.first-content {
     height: 100%;
     width: 100%;
     transition: all 0.4s;
@@ -313,7 +315,13 @@ i:hover{
     align-items: center;
     opacity: 1;
     border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
+
 
 .background-1{
     background: url(image/calligraph/6.PNG);
@@ -352,30 +360,42 @@ i:hover{
     background-size: cover;
 }
   
-  .card:hover .first-content {
-    height: 0px;
-    opacity: 0;
-  }
-  
-  .second-content {
-    height: 0%;
+.card:hover .first-content {
+    filter: blur(5px);
+    /* opacity: 0.5; */
+}
+
+.first-content p {
+}
+
+.second-content {
+    height: 100%;
     width: 100%;
     opacity: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 15px;
-    transition: all 0.4s;
+    transition: all 0.4s ease-in-out;
     font-size: 0px;
-    transform: rotate(90deg) scale(-1);
-  }
+    transform: scale(0.8);
+    position: absolute;
+    top: 70px;
+    left: 0;
+}
   
-  .card:hover .second-content {
+.card:hover .second-content {
     opacity: 1;
-    height: 100%;
     font-size: 1.8rem;
-    transform: rotate(0deg);
-  }
+    transform: scale(1);
+    color: white;
+    color: black;
+    text-shadow: 0px 0px 5px white,  
+                 0px 0px 10px white,  
+                 0px 0px 15px white; 
+}
+
+ 
 
 
   .custom{
