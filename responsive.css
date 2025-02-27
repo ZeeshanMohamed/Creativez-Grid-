@@ -115,9 +115,7 @@
       .frame:nth-child(2) { animation-delay: 3s; }
       .frame:nth-child(3) { animation-delay: 6s; }
       
-      .main-4, footer{
-          display: none;
-        }
+     
 
 
         .notable-sketch {
