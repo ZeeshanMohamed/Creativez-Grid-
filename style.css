@@ -1,35 +1,6 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Scheherazade+New:wght@400;700&display=swap');
-
-
-html {
-    scroll-behavior: smooth;
-  }
-  
-  .section {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    font-weight: bold;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  }
-  
-  .scroll-container:has(.section:in-viewport) .section {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-
-
-
-
-
-
-
 
 *{
     margin: 0;
@@ -40,7 +11,7 @@ html {
     display: grid;
     grid-template-columns: 3fr 3fr 1fr;
     width: 100%;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
 }
 
 nav{
@@ -90,6 +61,7 @@ i:hover{
     background-repeat: no-repeat;
     background-size: contain;
     background-position:80%;
+    margin-bottom: 40px;
 }
 
 
@@ -113,6 +85,10 @@ i:hover{
     justify-content: center;
     color: black;
     text-align: center;
+    text-shadow: 
+        -2px -2px 3px rgba(255, 215, 0, 0.8), 
+        2px 2px 3px rgba(218, 165, 32, 0.8), 
+        4px 4px 5px rgba(184, 134, 11, 0.6);
 }
 
 .saying{
@@ -123,6 +99,7 @@ i:hover{
     align-items: center;
     text-align: center;
     width: 70%;
+    font-weight: bold;
 }
 
 .arabic-text {
@@ -136,6 +113,10 @@ i:hover{
     font-size: 28px;
     margin-top: 20px;
     width: 50%;
+    text-shadow: 
+        -2px -2px 3px rgba(255, 215, 0, 0.8), 
+        2px 2px 3px rgba(218, 165, 32, 0.8), 
+        4px 4px 5px rgba(184, 134, 11, 0.6);
 }
 
 
@@ -156,41 +137,34 @@ i:hover{
     margin-top: 30px;
 }
 
-/* General CTA Button Style */
+
 .cta {
     display: flex;
     align-items: center;
     gap: 10px;
     font-size: 18px;
     font-weight: bold;
-    padding: 14px 28px;
-    border-radius: 50px;
+    padding: 14px 20px;
+    border-radius: 40px;
     text-decoration: none;
     color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease-in-out;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-    padding-left: 10px;
+    
 }
-
-/* WhatsApp Button */
+.fab{
+    margin-left: 0px;
+}
 .whatsapp-btn {
     background: linear-gradient(45deg, #25D366, #128C7E);
 }
 
-.whatsapp-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
-}
-
-/* Instagram Button */
 .instagram-btn {
     background: linear-gradient(45deg, #fccc63, #bc1888, #e4405f);
 }
 
-.instagram-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
-}
+
 .main-1-picture{
     width: 550px;
 }
@@ -199,6 +173,8 @@ i:hover{
     /* margin-right: 70px; */
     height: 500px;
     width: 500px;
+    filter: drop-shadow(0px -5px 10px rgba(255, 255, 255, 1)) 
+            drop-shadow(0px 5px 10px rgb(230, 187, 46));
 }
 
 .main-1-picture img:hover{
@@ -211,11 +187,13 @@ i:hover{
 .main-2{
     background: linear-gradient(360deg, #d4af37, #FFFFFF);
     height: 100%;
+    /* margin-bottom: 40px; */
 }
 .main-2 h2{
     text-align: center;
     margin-top: 40px;
     font-size: 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .main-2-p{
@@ -282,6 +260,7 @@ i:hover{
     padding: 50px 0px;
     background: linear-gradient(180deg, #d4af37, #FFFFFF);
     width: 100%;
+    /* margin-bottom: 40px; */
 }
 
 .main-3 h2 {
@@ -289,6 +268,7 @@ i:hover{
     /* font-family: 'Playfair Display', serif; */
     font-family: "Cormorant Garamond", serif;
     margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .main-3 p {
@@ -401,6 +381,7 @@ i:hover{
   .custom{
     margin-top: 70px;
     margin-bottom: 40px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   }
 
 
@@ -522,8 +503,9 @@ i:hover{
     background: linear-gradient(360deg, #d4af37, #FFFFFF);
 }
 
-  .main-4 h1{
+.main-4 h1{
     text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .main-4 h3{
@@ -562,7 +544,7 @@ i:hover{
 .steps{
     margin-bottom: 20px;
     font-size: 16px;
-
+    
 }
 
 .link-container {
@@ -570,6 +552,7 @@ i:hover{
     justify-content: center;
     gap: 15px;
     margin-top: 20px;
+    /* margin-bottom: 40px; */
 }
 
 .link-btn {
