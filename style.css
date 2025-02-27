@@ -40,7 +40,7 @@ html {
     display: grid;
     grid-template-columns: 3fr 3fr 1fr;
     width: 100%;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
 }
 
 nav{
@@ -113,6 +113,10 @@ i:hover{
     justify-content: center;
     color: black;
     text-align: center;
+    text-shadow: 
+        -2px -2px 3px rgba(255, 215, 0, 0.8), 
+        2px 2px 3px rgba(218, 165, 32, 0.8), 
+        4px 4px 5px rgba(184, 134, 11, 0.6);
 }
 
 .saying{
@@ -123,6 +127,7 @@ i:hover{
     align-items: center;
     text-align: center;
     width: 70%;
+    font-weight: bold;
 }
 
 .arabic-text {
@@ -136,6 +141,10 @@ i:hover{
     font-size: 28px;
     margin-top: 20px;
     width: 50%;
+    text-shadow: 
+        -2px -2px 3px rgba(255, 215, 0, 0.8), 
+        2px 2px 3px rgba(218, 165, 32, 0.8), 
+        4px 4px 5px rgba(184, 134, 11, 0.6);
 }
 
 
@@ -199,6 +208,8 @@ i:hover{
     /* margin-right: 70px; */
     height: 500px;
     width: 500px;
+    filter: drop-shadow(0px -5px 10px rgba(255, 255, 255, 1)) 
+            drop-shadow(0px 5px 10px rgba(212, 175, 55, 1));
 }
 
 .main-1-picture img:hover{
@@ -216,11 +227,15 @@ i:hover{
     text-align: center;
     margin-top: 40px;
     font-size: 30px;
+    text-shadow: 
+        0px 0px 5px rgba(255, 215, 0, 0.8),
+        1px 1px 10px rgba(255, 165, 0, 0.6);
 }
 
 .main-2-p{
     text-align: center;
     margin-top: 20px;
+    font-weight: bold;
 }
 
 .category-grid{
@@ -252,7 +267,7 @@ i:hover{
     position: absolute;
     width: 100%;
     height: 2px;
-    background: linear-gradient(to right, #999999, #313131);
+    background: linear-gradient(to right, rgb(255, 255, 255), #ffffff);
     bottom: -5px;
     left: 0;
     transform: scaleX(0);
@@ -289,6 +304,9 @@ i:hover{
     /* font-family: 'Playfair Display', serif; */
     font-family: "Cormorant Garamond", serif;
     margin-bottom: 10px;
+    text-shadow: 
+        0px 0px 5px rgba(255, 215, 0, 0.8),
+        1px 1px 10px rgba(255, 165, 0, 0.6);
 }
 
 .main-3 p {
@@ -311,20 +329,23 @@ i:hover{
     background: #ecd58a;
     transition: all 0.4s;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
     font-size: 30px;
     font-weight: 900;
-  }
-  
-  .card:hover {
+    overflow: hidden;
+    position: relative;
+}
+
+.card:hover {
     border-radius: 15px;
     cursor: pointer;
     transform: scale(1.1);
-    box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
     background: rgba(236, 236, 236, 0.966);
-  }
-  
-  .first-content {
+}
+
+/* First Content - Background Blurs on Hover */
+.first-content {
     height: 100%;
     width: 100%;
     transition: all 0.4s;
@@ -333,7 +354,45 @@ i:hover{
     align-items: center;
     opacity: 1;
     border-radius: 15px;
+    background-size: cover;
+    background-position: center;
 }
+
+/* Blur effect on hover */
+.card:hover .first-content {
+    filter: blur(5px);
+}
+
+/* Text Effect - Black with White Glow */
+.first-content p {
+    color: black;
+    text-shadow: 0px 0px 10px white;
+}
+
+/* Second Content - Initially Hidden */
+.second-content {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: all 0.4s ease-in-out;
+    font-size: 0px;
+    transform: scale(0.8);
+    position: absolute;
+    top: 70px;
+    left: 0;
+}
+
+.card:hover .second-content {
+    opacity: 1;
+    font-size: 1.8rem;
+    transform: scale(1);
+}
+
+
 
 .background-1{
     background: url(image/calligraph/6.PNG);
@@ -372,35 +431,14 @@ i:hover{
     background-size: cover;
 }
   
-  .card:hover .first-content {
-    height: 0px;
-    opacity: 0;
-  }
-  
-  .second-content {
-    height: 0%;
-    width: 100%;
-    opacity: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    transition: all 0.4s;
-    font-size: 0px;
-    transform: rotate(90deg) scale(-1);
-  }
-  
-  .card:hover .second-content {
-    opacity: 1;
-    height: 100%;
-    font-size: 1.8rem;
-    transform: rotate(0deg);
-  }
 
 
   .custom{
     margin-top: 70px;
     margin-bottom: 40px;
+    text-shadow: 
+        0px 0px 5px rgba(255, 215, 0, 0.8),
+        1px 1px 10px rgba(255, 165, 0, 0.6);
   }
 
 
@@ -484,6 +522,9 @@ i:hover{
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 10px;
     margin-top: 40px;
+    text-shadow: 
+        0px 0px 5px rgba(255, 215, 0, 0.8),
+        1px 1px 10px rgba(255, 165, 0, 0.6);
   }
   
   .grid-item {
@@ -524,6 +565,9 @@ i:hover{
 
   .main-4 h1{
     text-align: center;
+    text-shadow: 
+        0px 0px 5px rgba(255, 215, 0, 0.8),
+        1px 1px 10px rgba(255, 165, 0, 0.6);
 }
 
 .main-4 h3{
