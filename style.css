@@ -32,11 +32,11 @@ i:hover{
 .logo-name{
     display: flex;
     align-items: center;
-    padding-left: 5px;
 }
 
 .logo-name img{
     width: 150px;
+    padding-left: 5px;
 }
 
 .donebyareeb{
