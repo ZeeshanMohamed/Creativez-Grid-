@@ -1,0 +1,613 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Scheherazade+New:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    font-family: "Cormorant Garamond", serif;
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: 3fr 3fr 1fr;
+    width: 100%;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+i{
+    font-style: normal;
+    margin-left: 20px;
+    font-family: "Roboto", serif;
+}
+
+i:hover{
+    color: rgb(162, 162, 255);
+}
+
+
+.logo-name{
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+}
+
+.logo-name img{
+    width: 150px;
+}
+
+.donebyareeb{
+    display: flex;
+    justify-content: right;
+}
+.donebyareeb img{
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+}
+
+
+.main-1{
+    /* height: 100%; */
+    width: 100%;
+    background-color: gray;
+    display: grid;
+    grid-template-areas: 'main-1-slogan main-1-picture';
+    background: linear-gradient(180deg, #d4af37, #FFFFFF);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:80%;
+}
+
+
+.main-1-slogan{
+    width: 85%;
+}
+.box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.main-1-slogan h2 {
+    margin-top: 100px;
+    /* margin-left: 140px; */
+    font-size: 40px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    color: black;
+    text-align: center;
+}
+
+.saying{
+    margin-top: 20px;
+    /* margin-left: 180px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+}
+
+.arabic-text {
+    margin-top: 50px;
+    /* margin-left: 180px; */
+    font-family: "Cormorant Garamond", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 28px;
+    margin-top: 20px;
+    width: 50%;
+}
+
+
+.cta-button {
+    margin-top: 30px;
+    /* margin-left: 270px; */
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* General CTA Button Style */
+.cta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 14px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    padding-left: 10px;
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+    background: linear-gradient(45deg, #25D366, #128C7E);
+}
+
+.whatsapp-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Instagram Button */
+.instagram-btn {
+    background: linear-gradient(45deg, #fccc63, #bc1888, #e4405f);
+}
+
+.instagram-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+.main-1-picture{
+    width: 550px;
+}
+.main-1-picture img{
+    margin-top: 30px;
+    /* margin-right: 70px; */
+    height: 500px;
+    width: 500px;
+}
+
+.main-1-picture img:hover{
+    filter:progid:DXImageTransform.Microsoft.Glow(Color=white,Strength=5);
+}
+
+/* ------------------ */
+
+
+.main-2{
+    background: linear-gradient(360deg, #d4af37, #FFFFFF);
+    height: 100%;
+}
+.main-2 h2{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+.main-2-p{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.category-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, MinMax(300px, 1fr));
+    margin-top: 40px;
+    column-gap: 7px;
+}
+
+.cat {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.bold{
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+.cat {
+    /* font-size: 2rem; */
+    /* color: #ffffff; */
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+  }
+  
+  .cat::after,
+  .cat::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #999999, #313131);
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease-out;
+  }
+  
+  .cat::before {
+    top: -5px;
+    transform-origin: left;
+  }
+  
+  .cat:hover::after,
+  .cat:hover::before {
+    transform: scaleX(1);
+  }
+  
+
+
+
+
+
+
+/* ------------------ */
+.main-3 {
+    text-align: center;
+    padding: 50px 0px;
+    background: linear-gradient(180deg, #d4af37, #FFFFFF);
+    width: 100%;
+}
+
+.main-3 h2 {
+    font-size: 32px;
+    /* font-family: 'Playfair Display', serif; */
+    font-family: "Cormorant Garamond", serif;
+    margin-bottom: 10px;
+}
+
+.main-3 p {
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.artwork-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+
+.card {
+    width: 270px;
+    height: 170px;
+    background: #d4af37;
+    transition: all 0.4s;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+    font-size: 30px;
+    font-weight: 900;
+  }
+  
+  .card:hover {
+    border-radius: 15px;
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+    background: rgb(255, 255, 255);
+  }
+  
+  .first-content {
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    border-radius: 15px;
+}
+
+.background-1{
+    background: url(image/calligraph/6.PNG);
+    background-size: cover;
+}
+
+.background-2{
+    background: url(image/calligraph/25.PNG);
+    background-size: cover;
+}
+
+.background-3{
+    background: url(image/calligraph/29.PNG);
+    background-size: cover;
+}
+.background-4{
+    background: url(image/calligraph/35.PNG);
+    background-size: cover;
+}
+
+.background-5{
+    background: url(image/calligraph/43.PNG);
+    background-size: cover;
+}
+.background-6{
+    background: url(image/calligraph/13.PNG);
+    background-size: cover;
+}
+
+.background-7{
+    background: url(image/calligraph/48.PNG);
+    background-size: cover;
+}
+.background-8{
+    background: url(image/calligraph/49.PNG);
+    background-size: cover;
+}
+  
+  .card:hover .first-content {
+    height: 0px;
+    opacity: 0;
+  }
+  
+  .second-content {
+    height: 0%;
+    width: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: all 0.4s;
+    font-size: 0px;
+    transform: rotate(90deg) scale(-1);
+  }
+  
+  .card:hover .second-content {
+    opacity: 1;
+    height: 100%;
+    font-size: 1.8rem;
+    transform: rotate(0deg);
+  }
+
+
+  .custom{
+    margin-top: 70px;
+    margin-bottom: 40px;
+  }
+
+
+  .wedding-frame {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+    justify-items: center;
+    width: fit-content; 
+    margin: 50px auto; 
+    
+}
+  
+
+.frame {
+    width: 200px;
+    height: 240px;
+    background: rgb(255, 255, 255);
+    transition: all 0.4s;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+    font-size: 30px;
+    font-weight: 900;
+  }
+  
+  .frame:hover {
+    border-radius: 15px;
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+    background: rgb(255, 255, 255);
+  }
+
+.frame-1{
+    background: url(image/calligraph/frame-1.PNG);
+    background-size: contain;
+}
+
+.frame-2{
+    background: url(image/calligraph/frame-2.PNG);
+    background-size: contain;
+}
+
+.frame-3{
+    background: url(image/calligraph/frame-3.PNG);
+    background-size: cover;
+}
+
+.frame:hover .first-content {
+    height: 0px;
+    opacity: 0;
+  }
+  
+  .second-content {
+    height: 0%;
+    width: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: all 0.4s;
+    font-size: 0px;
+    transform: rotate(90deg) scale(-1);
+  }
+  
+  .frame:hover .second-content {
+    opacity: 1;
+    height: 100%;
+    font-size: 1.8rem;
+    transform: rotate(0deg);
+  }
+
+
+
+
+
+.notable-sketch {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+    margin-top: 40px;
+  }
+  
+  .grid-item {
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .grid-item img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Special sizes for variation */
+  .tall {
+    grid-row: span 2;
+  }
+  
+  .wide {
+    grid-column: span 2;
+  }
+  
+  /* Hover effect */
+  .grid-item:hover img {
+    transform: scale(1.05);
+  }
+  
+
+  /* ------------------------ */
+
+  .main-4{
+    height: 100%;
+    background: linear-gradient(360deg, #d4af37, #FFFFFF);
+}
+
+  .main-4 h1{
+    text-align: center;
+}
+
+.main-4 h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.order-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.order-grid-item{
+    padding: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2),  
+    -5px -5px 10px rgba(0, 0, 0, 0.2),  
+    5px -5px 10px rgba(0, 0, 0, 0.2),  
+    -5px 5px 10px rgba(0, 0, 0, 0.2);
+    background: white;
+    margin-bottom: 50px;
+}
+
+.order-grid-item h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.p1{
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.steps{
+    margin-bottom: 20px;
+    font-size: 16px;
+
+}
+
+.link-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.link-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    border-radius: 50px;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* WhatsApp Button */
+.whatsapp {
+    background: linear-gradient(45deg, #25D366, #128C7E);
+}
+
+.whatsapp:hover {
+    background: linear-gradient(45deg, #128C7E, #25D366);
+    transform: scale(1.05);
+}
+
+/* Instagram Button */
+.instagram {
+    background: linear-gradient(45deg, #fccc63, #bc1888, #e4405f);
+}
+
+.instagram:hover {
+    background: linear-gradient(45deg, #e4405f, #bc1888, #fccc63);
+    transform: scale(1.05);
+}
+
+
+/* - */
+
+.footer {
+    background-color: #B8860B; /* Elegant gold */
+    text-align: center;
+    padding: 25px 15px;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    color: white;
+    position: relative;
+}
+
+.footer p {
+    margin: 5px 0;
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.footer p:hover {
+    opacity: 1;
+}
+
+/* Decorative Line */
+.footer::before {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: white;
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
