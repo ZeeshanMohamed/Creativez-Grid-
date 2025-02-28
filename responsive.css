@@ -174,8 +174,8 @@
     .navbar {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        width: 100%;
-        /* padding: 0px 5px; */
+        width: 101%;
+        
 
 
     }
